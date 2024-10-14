@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test REST API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .link-container {
+            margin-top: 20px;
+        }
+
+        a {
+            display: inline-block;
+            margin: 10px 0;
+            padding: 10px 10px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Test REST API</h1>
+    <p>Use the links below to test different endpoints of the REST API:</p>
+    <div class="link-container">
+        <div>
+            <p>This is the customer route "/customers" <a href="/customers" target="_blank">Customers</a></p>
+            <p>Supported methods <strong>['GET','POST','PUT']</strong></p>
+            <ul>
+                <li>/customers</li>
+                <li>/customers/{CustomerID}</li>
+                <li>/customers/{CustomerID}/orders</li>
+            </ul>
+        </div>
+        <div>
+            <p>This is the customer route "/products" <a href="/products" target="_blank">Products</a></p>
+            <p>Supported methods <strong>['GET','POST','PUT']</strong></p>
+            <ul>
+                <li>/products</li>
+                <li>/products/{ProductID}</li>
+            </ul>
+        </div>
+        <div>
+            <p>This is the customer route "/orders" <a href="/orders" target="_blank">Orders</a></p>
+            <p>Supported methods <strong>['GET','POST','PUT']</strong></p>
+            <ul>
+                <li>/orders</li>
+                <li>/orders/{OrderID}</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
